@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities; 
+
+@layer base{
+    @font-face{
+        font-family: Montserrat;
+        src: local('Montserrat') url("/public/fonts/montserrat/Montserrat-Regular.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face{
+        font-family: Montserrat Medium;
+        src: local("Montserrat Medium") url("/public/fonts/montserrat/Montserrat-Medium.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face{
+        font-family: Montserrat SemiBold;
+        src: local("Montserrat SemiBold") url("/public/fonts/montserrat/Montserrat-SemiBold.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face{
+        font-family: PlayfairLight;
+        src: local("Playfair Display") url("/public/fonts/playfair/PlayfairDisplay-Regular.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face{
+        font-family: PlayfairMedium;
+        src: local("Playfair Display Medium") url("/public/fonts/playfair/PlayfairDisplay-Medium.ttf") format("truetype");
+        font-display: swap;
+    }
+    @font-face{
+        font-family: PlayfairBold;
+        src: local("Playfair Display Bold") url("/public/fonts/playfair/PlayfairDisplay-Bold.ttf") format("truetype");
+        font-display: swap;
+    }
+    body{
+        @apply font-Dana
+    }
+}
